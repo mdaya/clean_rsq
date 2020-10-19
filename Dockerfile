@@ -1,4 +1,4 @@
-FROM images.sbgenomics.com/ognjenm/vcftools:0.1.14
+FROM images.sbgenomics.com/luka_topalovic/bcftools:1.9
 
 # Install scripts
 RUN mkdir /home/analyst
