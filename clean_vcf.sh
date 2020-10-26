@@ -3,8 +3,8 @@
 in_vcf=$1
 sample_file=$2
 out_vcf=`basename $in_vcf | sed 's/.vcf.gz/_clean.vcf.gz/'`
+tmp_sample_vcf=`basename $in_vcf | sed 's/.vcf.gz/_samples.vcf.gz/'`
 
-tmp_sample_vcf=tmp_samples_${out_vcf}
 bcftools view --samples-file $sample_file $in_vcf | bgzip -c > $tmp_sample_vcf
 tabix $tmp_sample_vcf
 
