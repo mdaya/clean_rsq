@@ -8,7 +8,7 @@ $namespaces:
 requirements:
 - class: ShellCommandRequirement
 - class: DockerRequirement
-  dockerPull: quay.io/mdaya/clean_vcf:0.10
+  dockerPull: quay.io/mdaya/clean_vcf:1.0
 
 inputs:
 - id: vcf_gz_file

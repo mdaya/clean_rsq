@@ -663,7 +663,7 @@ steps:
     requirements:
     - class: ShellCommandRequirement
     - class: DockerRequirement
-      dockerPull: quay.io/mdaya/clean_vcf:0.12
+      dockerPull: quay.io/mdaya/clean_vcf:1.0
 
     inputs:
     - id: vcf_gz_file
@@ -759,7 +759,7 @@ steps:
     requirements:
     - class: ShellCommandRequirement
     - class: DockerRequirement
-      dockerPull: quay.io/mdaya/clean_vcf:0.12
+      dockerPull: quay.io/mdaya/clean_vcf:1.0
 
     inputs:
     - id: in_gz_vcf
